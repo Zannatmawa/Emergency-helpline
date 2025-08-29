@@ -16,13 +16,17 @@ const number = document.querySelector(".number")
 const callButton = document.querySelectorAll(".callBtn");
 
 callButton.forEach(function (b) {
-    b.addEventListener('click', function () {
-        alert("calling " + info.innerHTML + " service " + number.innerHTML + "...");
-    })
+    if (info.innerHTML == 'National Emergency') {
+        b.addEventListener('click', function () {
+            alert("calling " + info.innerHTML + " service " + number.innerHTML + "...");
+        })
+    }
+
+
 })
 
 
-// coin
+// coin done
 const coinRemove = document.getElementById("coinRemove");
 let currentCoins = parseInt(coinRemove.innerHTML);
 callButton.forEach(function (btn) {
@@ -35,13 +39,45 @@ callButton.forEach(function (btn) {
         } else {
             alert("Not enough coins!");
         }
-    });
-});
 
+        // 
+
+        const divAppend = document.getElementById("divAppend");
+        const newDiv = document.createElement("div")
+        const h1 = document.createElement("h1")
+        const span = document.createElement("span")
+        const h2 = document.createElement("h2")
+        const now = new Date()
+        const hours = now.getHours()
+        const minutes = now.getMinutes()
+        const seconds = now.getSeconds()
+        const currentTime = `${hours}:${minutes}:${seconds}`;
+
+        h1.style.fontSize = "18px"
+        span.style.color = "gray"
+        span.style.fontWeight = "bold"
+
+        h1.innerHTML = info.innerText
+        span.innerHTML = number.innerText;
+        h2.innerHTML = currentTime
+
+        newDiv.appendChild(h1)
+        newDiv.appendChild(span)
+        divAppend.appendChild(newDiv)
+        divAppend.appendChild(h2)
+
+    });
+
+});
+//clearBtn
+const clearBtn = document.getElementById("clearBtn");
+clearBtn.addEventListener("click", function () {
+    divAppend.innerHTML = " "
+})
 
 // history
 
-// btn.addEventListener('click', function () {
+// callButton.addEventListener('click', function () {
 //     const divAppend = document.getElementById("divAppend");
 //     const newDiv = document.createElement("div")
 //     const h1 = document.createElement("h1")
