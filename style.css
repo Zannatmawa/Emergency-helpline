@@ -1,0 +1,21 @@
+@media (min-width: 337px) and (max-width: 640px) {
+    .navBar {
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .card-section {
+        flex-direction: column;
+
+    }
+
+    .card-section .card-div {
+        justify-content: center;
+    }
+
+    .card-section .list-div {
+        width: 350px;
+        margin-top: 20px;
+    }
+}
