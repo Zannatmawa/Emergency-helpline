@@ -29,7 +29,7 @@
         <img class="w-5 h-5" src="./assets/coin.png" alt="">
       </div>
       <div class="w-[100px]  h-[50px] bg-green-600 rounded-3xl flex justify-center items-center">
-        <button class="text-white"> <span id="copyText">0</span> copy</button>
+        <button class="text-white"> <span class="copyText">0</span> copy</button>
       </div>
     </div>
   </div>
@@ -43,10 +43,10 @@
   </div>
 
   <!-- card section -->
-  <div class="p-5 flex card-section">
+  <div class="p-5 flex card-section h-[800px] bg-blue-50">
     <div class="flex flex-wrap gap-5 card-div">
       <!-- 1 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/emergency.png" alt="">
@@ -55,10 +55,10 @@
         </div>
         <h1 class="font-bold text-[20px]">National Emergency Number</h1>
         <h2 class="info text-gray-500 text-[18px]">National Emergency</h2>
-        <p class="number text-[25px] font-semibold ">999</p>
+        <p id="num" class="number text-[25px] font-semibold ">999</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button id="copyBtn" class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button id=""
@@ -67,7 +67,7 @@
         </div>
       </div>
       <!-- 2 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-blue-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/police.png" alt="">
@@ -79,7 +79,7 @@
         <p class="number text-[25px] font-semibold ">999</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button id="police"
@@ -88,7 +88,7 @@
         </div>
       </div>
       <!-- 3 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/fire-service.png" alt="">
@@ -97,11 +97,11 @@
         </div>
 
         <h1 class="font-bold text-[20px]">Fire Service Number</h1>
-        <h2 class="text-gray-500 text-[18px]">Fire Service</h2>
-        <p class="text-[25px] font-semibold ">999</p>
+        <h2 class=info text-gray-500 text-[18px]">Fire Service</h2>
+        <p class="number text-[25px] font-semibold ">999</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button
@@ -110,7 +110,7 @@
         </div>
       </div>
       <!-- 4 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/ambulance.png" alt="">
@@ -118,11 +118,11 @@
           <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
         </div>
         <h1 class="font-bold text-[20px]">Ambulance Service</h1>
-        <h2 class="text-gray-500 text-[18px]">Ambulance</h2>
-        <p class="text-[25px] font-semibold ">1994-999999</p>
+        <h2 class="info text-gray-500 text-[18px]">Ambulance</h2>
+        <p class="number text-[25px] font-semibold ">1994-999999</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button
@@ -131,19 +131,19 @@
         </div>
       </div>
       <!-- 5 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/emergency.png" alt="">
           </div>
           <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <h1 class="font-bold text-[20px]">Women & Child Helpline</h1>
-        <h2 class="text-gray-500 text-[18px]">Women & Child Helpline</h2>
+        <h1 class="info font-bold text-[20px]">Women & Child Helpline</h1>
+        <h2 class="number text-gray-500 text-[18px]">Women & Child Helpline</h2>
         <p class="text-[25px] font-semibold ">109</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button
@@ -152,7 +152,7 @@
         </div>
       </div>
       <!-- 6 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
+      <div class="card w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
         <div class="flex justify-between items-center">
           <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
             <img class=" w-[40px]" src="./assets/emergency.png" alt="">
@@ -160,74 +160,11 @@
           <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
         </div>
         <h1 class="font-bold text-[20px]">Anti-Corruption Helpline</h1>
-        <h2 class="text-gray-500 text-[18px]">Anti-Corruption</h2>
-        <p class="text-[25px] font-semibold ">106</p>
+        <h2 class="info text-gray-500 text-[18px]">Anti-Corruption</h2>
+        <p class="number text-[25px] font-semibold ">106</p>
         <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
         <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
-               rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
-              class="mr-2 fa-solid fa-copy"></i>Copy</button>
-          <button
-            class="callBtn w-[200px]  h-[40px] bg-green-600 rounded-xl flex justify-center items-center border-1 border-gray-200 text-white"><i
-              class="fa-solid fa-phone"></i> Call</button>
-        </div>
-      </div>
-      <!-- 7 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
-        <div class="flex justify-between items-center">
-          <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
-            <img class=" w-[40px]" src="./assets/emergency.png" alt="">
-          </div>
-          <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
-        </div>
-        <h1 class="font-bold text-[20px]">Electricity Helpline</h1>
-        <h2 class="text-gray-500 text-[18px]">Electricity Outage</h2>
-        <p class="text-[25px] font-semibold ">16216</p>
-        <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
-        <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
-               rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
-              class="mr-2 fa-solid fa-copy"></i>Copy</button>
-          <button
-            class="callBtn w-[200px]  h-[40px] bg-green-600 rounded-xl flex justify-center items-center border-1 border-gray-200 text-white"><i
-              class="fa-solid fa-phone"></i> Call</button>
-        </div>
-      </div>
-      <!-- 8 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
-        <div class="flex justify-between items-center">
-          <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
-            <img class=" w-[40px]" src="./assets/emergency.png" alt="">
-          </div>
-          <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
-        </div>
-        <h1 class="font-bold text-[20px]">Brac Helpline</h1>
-        <h2 class="text-gray-500 text-[18px]">Brac</h2>
-        <p class="text-[25px] font-semibold ">16445</p>
-        <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
-        <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
-               rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
-              class="mr-2 fa-solid fa-copy"></i>Copy</button>
-          <button
-            class="callBtn w-[200px]  h-[40px] bg-green-600 rounded-xl flex justify-center items-center border-1 border-gray-200 text-white"><i
-              class="fa-solid fa-phone"></i> Call</button>
-        </div>
-      </div>
-      <!-- 9 -->
-      <div class="w-[350px] h-[360px] shadow-md bg-white rounded-xl flex flex-col justify-around p-5">
-        <div class="flex justify-between items-center">
-          <div class="flex justify-center items-center bg-red-200 w-[60px] h-[60px] rounded-2xl">
-            <img class=" w-[40px]" src="./assets/emergency.png" alt="">
-          </div>
-          <button class="heartClicked"><i class="fa-regular fa-heart"></i></button>
-        </div>
-        <h1 class="font-bold text-[20px]">Bangladesh Railway Helpline </h1>
-        <h2 class="text-gray-500 text-[18px]">Bangladesh Railway </h2>
-        <p class="text-[25px] font-semibold ">163</p>
-        <span class="bg-gray-400 w-10 rounded-full text-center">All</span>
-        <div class="flex">
-          <button class="w-[200px]  h-[40px] mr-2  bg-white
+          <button class="copyBtn w-[200px]  h-[40px] mr-2  bg-white
                rounded-xl flex justify-center items-center border-1 border-gray-200 text-gray-500"><i
               class="mr-2 fa-solid fa-copy"></i>Copy</button>
           <button
@@ -243,15 +180,13 @@
         <button id="clearBtn"
           class="w-[100px]  h-[40px] bg-green-600 rounded-3xl flex justify-center items-center   text-white">Clear</button>
       </div>
-      <div class="flex flex-col justify-center items-center">
-        <div id="divAppend"
-          class="w-[340px] mx-4  h-[80px] mb-4 rounded-md bg-gray-50 p-5 flex flex-wrap  justify-between items-center">
-          <!-- <div>
+      <!-- <div class="flex flex-col justify-center items-center"></div> -->
+      <div id="divAppend" class="w-[340px] mx-4  h-auto mb-4 rounded-md bg-gray-50 p-5 flex  flex-col justify-between">
+        <!-- <div>
             <h1 class="text-[19px]"></h1>
             <span class="text-gray-500 font-semibold"></span>
           </div> -->
-          <!-- <h2>11:36:58AM</h2> -->
-        </div>
+        <!-- <h2>11:36:58AM</h2> -->
       </div>
     </div>
   </div>
